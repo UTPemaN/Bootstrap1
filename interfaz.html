@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interfaz</title>
+     <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+     <!--custom css-->
+    <link rel="stylesheet" href="interfaz.css">
+</head>
+<header>  
+    <nav  class="navbar navbar-expand-lg bg-header-tertiary TextColor" >
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+<body >
+   
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <h2>Formulario</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Lenguaje</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Lenguaje" autofocus>
+                      </div>
+                      <div class="mb-3">
+                        <label for="Descripcion" class="form-label">Descripcion</label>
+                        <textarea class="form-control" id="Descripcion" rows="3"></textarea>
+                      </div> 
+                      <div class="mb-3">
+                        <label for="Programadores" class="form-label">Numero de Programadores</label>
+                        <input type="number" class="form-control" id="Programadores" autofocus>
+                      </div>  
+                    <div class="d-grid gap-2">  
+                        <button class="btn btn-success">Guardar</button>
+                        <button class="btn btn-primary">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                <h2  class="centrado">Listado de Lenguajes</h2>
+                <table class="table table-dark table-striped">
+                    <thead class="centrado" >
+                        <tr>
+                            <th >#</th>
+                            <th>Lenguaje</th>
+                            <th>Cantidad de Programadores</th>
+                        </tr>
+                    </thead>
+                    <tbody class="centrado">
+                        <tr>
+                            <td>1</td>
+                            <td>JavaScript</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Python</td>
+                            <td>12</td> 
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>C#</td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Java</td>
+                            <td>120</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+</html>
